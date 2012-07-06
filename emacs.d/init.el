@@ -26,17 +26,19 @@
 (require 'config-ruby)
 ;(require 'config-lisp)
 (require 'config-scala)
-(require 'config-theme)
+;(require 'config-theme)
 (require 'config-shell)
 (require 'config-nav)
 (require 'config-magit)
 
 (load custom-file 'noerror)
 
-;; Aquamacs config
-(when (boundp 'aquamacs-version)
+;; Mac OS config
+(when (eq system-type 'darwin)
   (setq mac-option-modifier 'alt)
-  (setq mac-command-modifier 'meta))
+  (setq mac-command-modifier 'meta)
+  (global-set-key (kbd "M-h") 'ns-do-hide-emacs)
+  (global-set-key (kbd "M-H") 'ns-do-hide-others))
 
 (setq config-system-name
       ;; Work around a bug on OS X where system-name is FQDN
