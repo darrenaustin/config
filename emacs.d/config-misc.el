@@ -2,17 +2,19 @@
 
 (when window-system
   (setq frame-title-format '("%b"))
-  (tooltip-mode -1)
   (tool-bar-mode -1)
-  (blink-cursor-mode -1)
-  (mouse-wheel-mode t)
-  (menu-bar-mode -1))
+  (tooltip-mode -1)
+  (scroll-bar-mode -1)
+  (blink-cursor-mode)
+  (mouse-wheel-mode))
 
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(setq visible-bell t
+(setq default-frame-alist '((width . 100) (height . 60)))
+
+(setq visible-bell nil
       font-lock-maximum-decoration t
       inhibit-startup-message t
       transient-mark-mode t

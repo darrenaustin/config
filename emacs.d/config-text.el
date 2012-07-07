@@ -20,7 +20,6 @@
           "culpa qui officia deserunt mollit anim id est laborum."))
 
 ;; Markdown support
-(add-to-list 'load-path (config-file "vendor/markdown"))
 (require 'markdown-mode)
 (add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown$" . markdown-mode))

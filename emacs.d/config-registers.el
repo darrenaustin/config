@@ -7,7 +7,6 @@
 ;; You should add registers here for the files you edit most often.
 
 (dolist (r `((?i (file . ,(config-file "init.el")))
-             (?b (file . ,(config-file "config-bindings.el")))
              (?r (file . ,(config-file "config-registers.el")))))
   (set-register (car r) (cadr r)))
 

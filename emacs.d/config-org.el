@@ -1,6 +1,5 @@
 ;;; config-org.el --- Org mode configuration
 
-(add-to-list 'load-path (config-file "vendor/org/lisp"))
 (require 'org-install)
 
 (setq org-directory "~/Dropbox/Notes/")
