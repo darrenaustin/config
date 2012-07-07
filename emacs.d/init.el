@@ -37,8 +37,6 @@
 
 (defvar my-packages
   '(
-    color-theme
-    color-theme-solarized
     markdown-mode
     magit
     org
