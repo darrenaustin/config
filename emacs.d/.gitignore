@@ -1,4 +1,6 @@
 auto-save-list
 saved-places
+backups
+swank
 elpa
 *.elc

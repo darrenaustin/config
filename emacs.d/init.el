@@ -37,10 +37,13 @@
 
 (defvar my-packages
   '(
-    markdown-mode
-    magit
-    org
     twilight-theme
+    magit
+    clojure-mode
+    slime
+    markdown-mode
+    starter-kit-lisp
+    org
     )
   "A list of packages to ensure are installed at launch.")
 
@@ -55,7 +58,6 @@
 (require 'config-org)
 (require 'config-coding)
 (require 'config-ruby)
-;(require 'config-lisp)
 (require 'config-theme)
 (require 'config-shell)
 (require 'config-magit)
