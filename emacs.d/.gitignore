@@ -3,4 +3,5 @@ saved-places
 backups
 swank
 elpa
+.smex-items
 *.elc

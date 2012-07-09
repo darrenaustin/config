@@ -42,6 +42,7 @@
     clojure-mode
     slime
     markdown-mode
+    starter-kit
     starter-kit-lisp
     org
     )
