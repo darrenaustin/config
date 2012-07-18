@@ -22,7 +22,7 @@
   (setq mac-option-modifier 'alt)
   (setq mac-command-modifier 'meta)
   (global-set-key (kbd "M-h") 'ns-do-hide-emacs)
-  (global-set-key (kbd "M-H") 'ns-do-hide-others))
+  (global-set-key (kbd "M-A-h") 'ns-do-hide-others))
 
 ;; Init package system and make sure my standard packages are installed
 (require 'package)
@@ -56,6 +56,7 @@
 (require 'config-registers)
 (require 'config-misc)
 (require 'config-text)
+(require 'config-dired)
 (require 'config-org)
 (require 'config-coding)
 (require 'config-ruby)
